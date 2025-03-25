@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: api-gateway # Name of the application; matches configuration in the Config Server
+  config:
+    import: configserver:http://localhost:8888 # Import configurations from the Config Server
+  profiles:
+    active: default # Profile to fetch from the Config Server
